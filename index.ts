@@ -126,3 +126,4 @@ const config = {
 
 const game = new Phaser.Game(config);
 
+//idk why im typing this lol
