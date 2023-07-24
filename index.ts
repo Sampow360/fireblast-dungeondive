@@ -55,7 +55,9 @@ class SplashLevel extends Phaser.Scene {
     });
 
     /* START PRELOAD ITEMS */
-
+this.load.baseurl = "https://sampow360.github.io/fireblast-dungeondive/"
+this.load.image("S_Default"), ("static/assets/S_Sprites/S_Default.png")
+this.load.image("Chad_Default"), ("static/assets/Boss_Sprites/Chad_Default.png")
     /* END PRELOAD ITEMS */
   }
   private logo: Phaser.GameObjects.Image;
