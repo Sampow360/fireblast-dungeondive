@@ -109,8 +109,8 @@ class MainLevel extends Phaser.Scene {
   preload() {}
 
   create() {}
-  const Hero = this.physics.add.sprite(100, 200, 'S_IdleR', 0);
-  .anims.play('S_IdleR'); // notice the key for animation
+  const Hero = this.physics.add.sprite(100, 200, 'Hero', 0);
+  Hero.anims.play('S_IdleR'); // notice the key for animation
   update() {}
 }
 
