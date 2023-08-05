@@ -56,8 +56,13 @@ class SplashLevel extends Phaser.Scene {
 
     /* START PRELOAD ITEMS */
 this.load.baseURL = "https://sampow360.github.io/fireblast-dungeondive/"
-this.load.image("S_Default"), ("static/assets/S_Sprites/S_Default.png")
-this.load.image("Chad_Default"), ("static/assets/Boss_Sprites/Chad_Default.png")
+this.load.image("S_Default"), ("static/assets/S_Sprites/S_Default.png");
+this.load.image("Chad_Default"), ("static/assets/Boss_Sprites/Chad_Default.png");
+this.load.spritesheet('S_IdleR', 'static/assets/S_Sprites/S_idleR.png', {
+  frameWidth: 44,
+  frameHeight: 44,
+});
+this.load.animation('S_Anims', './static/assets/S_Anims.json');
     /* END PRELOAD ITEMS */
   }
   private logo: Phaser.GameObjects.Image;
@@ -104,7 +109,8 @@ class MainLevel extends Phaser.Scene {
   preload() {}
 
   create() {}
-
+  const Hero = this.physics.add.sprite(100, 200, 'S_IdleR', 0);
+  .anims.play('S_IdleR'); // notice the key for animation
   update() {}
 }
 
