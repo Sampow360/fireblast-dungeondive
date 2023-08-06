@@ -109,10 +109,7 @@ class MainLevel extends Phaser.Scene {
   preload() {}
 
   create() {}
-  const Hero = this.physics.add.sprite(100, 200, 'Hero', 0);
-  Hero.anims.play('S_IdleR'); // notice the key for animation
-  update() {}
-}
+
 
 /* -------------------------------------------------------------------------- */
 /*                                RUN GAME.                                   */
@@ -133,5 +130,3 @@ const config = {
 };
 
 const game = new Phaser.Game(config);
-
-//idk why im typing this lol
