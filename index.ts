@@ -56,8 +56,8 @@ class SplashLevel extends Phaser.Scene {
 
     /* START PRELOAD ITEMS */
 this.load.baseURL = "https://sampow360.github.io/fireblast-dungeondive/"
-this.load.image("S_Default"), ("static/assets/S_Sprites/S_Default.png");
-this.load.image("Chad_Default"), ("static/assets/Boss_Sprites/Chad_Default.png");
+this.load.image("S_Default", "static/assets/S_Sprites/S_Default.png");
+this.load.image("Chad_Default", "static/assets/Boss_Sprites/Chad_Default.png");
 this.load.spritesheet('S_IdleR', 'static/assets/S_Sprites/S_idleR.png', {
   frameWidth: 44,
   frameHeight: 44,
