@@ -105,6 +105,8 @@ this.load.tilemapTiledJSON('test', 'static/assets/Tiled/test.json');
   update() {}
 }
 
+/* ... (previous code) ... */
+
 /* ----------------------------------- MAIN SCENE --------------------------------- */
 
 class MainLevel extends Phaser.Scene {
@@ -116,9 +118,9 @@ class MainLevel extends Phaser.Scene {
 
   create() {
     const test = this.add.tilemap("test");
-    test.addTilesetImage("EnviromentalTiles1", "EnviromentalTiles1")
+    test.addTilesetImage("EnviromentalTiles1", "EnviromentalTiles1");
   }
-
+}
 
 /* -------------------------------------------------------------------------- */
 /*                                RUN GAME.                                   */
