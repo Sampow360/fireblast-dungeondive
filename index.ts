@@ -63,6 +63,12 @@ this.load.spritesheet('S_IdleR', 'static/assets/S_Sprites/S_idleR.png', {
   frameHeight: 44,
 });
 this.load.animation('S_Anims', './static/assets/S_Anims.json');
+
+// Preload the tileset image
+this.load.image('EnviromentalTiles1', 'static/assets/Tiled/EnviromentalTiles1.png');
+
+// Preload the tilemap in Tiled JSON format
+this.load.tilemapTiledJSON('test', 'static/assets/Tiled/test.json');
     /* END PRELOAD ITEMS */
   }
   private logo: Phaser.GameObjects.Image;
@@ -108,7 +114,10 @@ class MainLevel extends Phaser.Scene {
 
   preload() {}
 
-  create() {}
+  create() {
+    const test = this.add.tilemap("test");
+    test.addTilesetImage("EnviromentalTiles1", "EnviromentalTiles1")
+  }
 
 
 /* -------------------------------------------------------------------------- */
