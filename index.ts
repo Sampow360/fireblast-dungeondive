@@ -98,7 +98,7 @@ this.load.tilemapTiledJSON('test', 'static/assets/Tiled/test.json');
     });
 
     setTimeout(() => {
-      //this.scene.start('MainLevel');
+      this.scene.start('MainLevel');
     }, 2000);
   }
 
