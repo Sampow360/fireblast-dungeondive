@@ -65,7 +65,7 @@ this.load.spritesheet('S_IdleR', 'static/assets/S_Sprites/S_idleR.png', {
 this.load.animation('S_Anims', './static/assets/S_Anims.json');
 
 // Preload the tileset image
-this.load.image('EnviromentalTiles1', 'static/assets/Tiled/EnviromentalTiles1.png');
+this.load.image('EnviromentalTiles1', 'static/assets/Tiled/EnviromentalTiles1v2.png');
 
 // Preload the tilemap in Tiled JSON format
 this.load.tilemapTiledJSON('test', 'static/assets/Tiled/test.json');
